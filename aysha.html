@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayesha's Gallery</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --card-bg: #1e1e1e;
+            --highlight-color: #ff5722;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .dark-mode-toggle {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: var(--highlight-color);
+            color: var(--text-color);
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e64a19;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img:hover {
+            transform: scale(1.1);
+        }
+
+        audio {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ayesha's Gallery</h1>
+
+        <div class="dark-mode-toggle">
+            <button id="darkModeToggle">Toggle Dark Mode</button>
+        </div>
+
+        <div class="section" id="photoSection">
+            <h2>Photo Gallery</h2>
+            <div class="grid" id="photoGrid">
+                <!-- Add all 50 photos from the ayesha folder directly -->
+                <div class='card'><img src='766785.JPG' alt='Photo 1'></div>
+                <div class='card'><img src='ayesha\UniversalUpscaler_69bfe0f9-57e6-4c02-a5e4-90d7a504a000.jpg' alt='Photo 3'></div>
+                <div class='card'><img src='ayesha\UniversalUpscaler_b2593da8-b2b6-4ef0-be75-a25fc55b864e.jpg' alt='Photo 4'></div>
+                <div class='card'><img src='ayesha\WhatsApp Image 2024-11-23 at 3.19.17 AM.jpeg' alt='Photo 5'></div>
+                <div class='card'><img src='ayesha\WhatsApp Image 2024-11-25 at 7.02.08 PM.jpeg' alt='Photo 6'></div>
+                <div class='card'><img src='ayesha\WhatsApp Image 2024-11-29 at 11.15.16 PM.jpeg' alt='Photo 7'></div>
+                <div class='card'><img src='C:\Users\TanvirAhmed\Documents\day1.cpp\ayesha\WhatsApp Image 2024-11-29 at 11.18.00 PM.jpeg' alt='Photo 8'></div>
+                <div class='card'><img src='ayesha\WhatsApp Image 2024-12-31 at 11.47.14 PM.jpeg' alt='Photo 9'></div>
+                <div class='card'><img src='ayesha/photo10.jpg' alt='Photo 10'></div>
+                <div class='card'><img src='ayesha/photo11.jpg' alt='Photo 11'></div>
+                <div class='card'><img src='ayesha/photo12.jpg' alt='Photo 12'></div>
+                <div class='card'><img src='ayesha/photo13.jpg' alt='Photo 13'></div>
+                <div class='card'><img src='ayesha/photo14.jpg' alt='Photo 14'></div>
+                <div class='card'><img src='ayesha/photo15.jpg' alt='Photo 15'></div>
+                <div class='card'><img src='ayesha/photo16.jpg' alt='Photo 16'></div>
+                <div class='card'><img src='ayesha/photo17.jpg' alt='Photo 17'></div>
+                <div class='card'><img src='ayesha/photo18.jpg' alt='Photo 18'></div>
+                <div class='card'><img src='ayesha/photo19.jpg' alt='Photo 19'></div>
+                <div class='card'><img src='ayesha/photo20.jpg' alt='Photo 20'></div>
+                <div class='card'><img src='ayesha/photo21.jpg' alt='Photo 21'></div>
+                <div class='card'><img src='ayesha/photo22.jpg' alt='Photo 22'></div>
+                <div class='card'><img src='ayesha/photo23.jpg' alt='Photo 23'></div>
+                <div class='card'><img src='ayesha/photo24.jpg' alt='Photo 24'></div>
+                <div class='card'><img src='ayesha/photo25.jpg' alt='Photo 25'></div>
+                <div class='card'><img src='ayesha/photo26.jpg' alt='Photo 26'></div>
+                <div class='card'><img src='ayesha/photo27.jpg' alt='Photo 27'></div>
+                <div class='card'><img src='ayesha/photo28.jpg' alt='Photo 28'></div>
+                <div class='card'><img src='ayesha/photo29.jpg' alt='Photo 29'></div>
+                <div class='card'><img src='ayesha/photo30.jpg' alt='Photo 30'></div>
+                <div class='card'><img src='ayesha/photo31.jpg' alt='Photo 31'></div>
+                <div class='card'><img src='ayesha/photo32.jpg' alt='Photo 32'></div>
+                <div class='card'><img src='ayesha/photo33.jpg' alt='Photo 33'></div>
+                <div class='card'><img src='ayesha/photo34.jpg' alt='Photo 34'></div>
+                <div class='card'><img src='ayesha/photo35.jpg' alt='Photo 35'></div>
+                <div class='card'><img src='ayesha/photo36.jpg' alt='Photo 36'></div>
+                <div class='card'><img src='ayesha/photo37.jpg' alt='Photo 37'></div>
+                <div class='card'><img src='ayesha/photo38.jpg' alt='Photo 38'></div>
+                <div class='card'><img src='ayesha/photo39.jpg' alt='Photo 39'></div>
+                <div class='card'><img src='ayesha/photo40.jpg' alt='Photo 40'></div>
+                <div class='card'><img src='ayesha/photo41.jpg' alt='Photo 41'></div>
+                <div class='card'><img src='ayesha/photo42.jpg' alt='Photo 42'></div>
+                <div class='card'><img src='ayesha/photo43.jpg' alt='Photo 43'></div>
+                <div class='card'><img src='ayesha/photo44.jpg' alt='Photo 44'></div>
+                <div class='card'><img src='ayesha/photo45.jpg' alt='Photo 45'></div>
+                <div class='card'><img src='ayesha/photo46.jpg' alt='Photo 46'></div>
+                <div class='card'><img src='ayesha/photo47.jpg' alt='Photo 47'></div>
+                <div class='card'><img src='ayesha/photo48.jpg' alt='Photo 48'></div>
+                <div class='card'><img src='ayesha/photo49.jpg' alt='Photo 49'></div>
+                <div class='card'><img src='ayesha/photo50.jpg' alt='Photo 50'></div>
+            </div>
+        </div>
+
+        <div class="section" id="audioSection">
+            <h2>Audio Gallery</h2>
+            <div class="grid" id="audioGrid">
+                <!-- Placeholder for 15 audio files -->
+                <script>
+                    for (let i = 1; i <= 15; i++) {
+                        document.write(`<div class='card'><audio controls><source src='https://www.soundhelix.com/examples/mp3/SoundHelix-Song-${i}.mp3' type='audio/mpeg'>Your browser does not support the audio element.</audio></div>`);
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('darkModeToggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            if (document.body.classList.contains('light-mode')) {
+                document.documentElement.style.setProperty('--bg-color', '#ffffff');
+                document.documentElement.style.setProperty('--text-color', '#000000');
+                document.documentElement.style.setProperty('--card-bg', '#f0f0f0');
+                toggleButton.textContent = 'Toggle Light Mode';
+            } else {
+                document.documentElement.style.setProperty('--bg-color', '#121212');
+                document.documentElement.style.setProperty('--text-color', '#ffffff');
+                document.documentElement.style.setProperty('--card-bg', '#1e1e1e');
+                toggleButton.textContent = 'Toggle Dark Mode';
+            }
+        });
+    </script>
+</body>
+</html>
